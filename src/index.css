@@ -14,7 +14,6 @@ code {
 
 .checkbox {
   display: inline;
-  /*  border: 1px solid black; */
   height: 100px;
   width: 49%;
 }
@@ -23,13 +22,11 @@ code {
 }
 .signin {
   display: inline;
-  /* border: 1px solid black; */
   height: 500px;
   width: 49%;
 }
 .main {
   height: 100vh;
-  /* border: 3px solid green; */
 }
 
 .center {
@@ -38,12 +35,7 @@ code {
   align-items: center;
 }
 
-/* .border {
-  border: 1px dashed black;
-} */
-
 .form-style {
-  /* border: 1px solid black; */
   padding: 7px;
   display: block;
 }
