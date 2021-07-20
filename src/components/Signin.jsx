@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import Input from "./Input";
-// import InputPhone from "./InputPhone";
 
-function Signin({ method }) {
+export default function Signin({ method }) {
   const Emailform = (
     <Draggable draggableId="draggable-email" key="1" index="0">
       {(provided, snapshot) => (
@@ -21,11 +20,10 @@ function Signin({ method }) {
     <Draggable draggableId="draggable-phone" key="2" index="1">
       {(provided, snapshot) => (
         <div ref={provided.innerRef}>
-          {/* <InputPhone {...provided.dragHandleProps} /> */}
           <Input
             draggableProps={provided.draggableProps}
             drag={provided.dragHandleProps}
-            inputfor={["phone"]}
+            inputfor={["Phone"]}
           />
         </div>
       )}
@@ -56,17 +54,42 @@ function Signin({ method }) {
   }
 
   return (
-    <DragDropContext onDragEnd={handleDrag} className=" border">
+    <DragDropContext onDragEnd={handleDrag}>
       <Droppable droppableId="droppable-1">
         {(provided, _) => (
           <div ref={provided.innerRef} {...provided.droppableProps}>
-            {forms}
+            {forms[0]}
+            {forms[1] && (
+              <div>
+                <h2 style={{ marginLeft: "50%" }}>or</h2>
+                <span>{forms[1]}</span>
+              </div>
+            )}
             {provided.placeholder}
+            {(method.email || method.phone) && (
+              <button
+                onClick={() => console.log("logged in")}
+                style={{
+                  display: "block",
+                  marginLeft: "38%",
+                  width: "90px",
+                }}
+              >
+                Log In
+              </button>
+            )}
+            <div
+              style={{
+                display: "block",
+                marginLeft: "30%",
+                minWidth: "150px",
+              }}
+            >
+              New user?Sign up
+            </div>
           </div>
         )}
       </Droppable>
     </DragDropContext>
   );
 }
-
-export default Signin;

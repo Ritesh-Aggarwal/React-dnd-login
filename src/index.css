@@ -13,8 +13,8 @@ code {
 }
 
 .checkbox {
-  display: inline-block;
-  border: 1px solid black;
+  display: inline;
+  /*  border: 1px solid black; */
   height: 100px;
   width: 49%;
 }
@@ -22,14 +22,14 @@ code {
   display: block;
 }
 .signin {
-  display: inline-block;
-  border: 1px solid black;
+  display: inline;
+  /* border: 1px solid black; */
   height: 500px;
   width: 49%;
 }
 .main {
   height: 100vh;
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 
 .center {
@@ -38,11 +38,27 @@ code {
   align-items: center;
 }
 
-.border {
+/* .border {
   border: 1px dashed black;
+} */
+
+.form-style {
+  /* border: 1px solid black; */
+  padding: 7px;
+  display: block;
+}
+
+/* styles for svg */
+.form-style div {
+  position: absolute;
+  padding: 0px;
+  margin: 0.5em auto auto auto;
 }
 
 .form-style form input {
-  border: 1px solid black;
   display: block;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: auto 0px 5px 30px;
 }

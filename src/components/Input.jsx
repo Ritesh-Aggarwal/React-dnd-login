@@ -3,12 +3,16 @@ import DragHandle from "./DragHandle";
 
 function Input({ draggableProps, drag, inputfor }) {
   return (
-    <div {...draggableProps} className="form-style">
+    <div {...draggableProps} className="form-style center">
       <DragHandle {...drag} />
-      <form>
-        {inputfor.map((item, i) => (
-          <input type="text" key={i} placeholder={item}></input>
-        ))}
+      <form onSubmit={(e) => console.log(e.target)}>
+        {inputfor.map((item, i) => {
+          if (item === "Password") {
+            return <input type="password" key={i} placeholder={item}></input>;
+          } else {
+            return <input type="text" key={i} placeholder={item}></input>;
+          }
+        })}
       </form>
     </div>
   );
