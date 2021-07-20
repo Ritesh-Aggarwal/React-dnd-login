@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-dnd-login/static/css/main.e5434f79.chunk.css",
+    "main.js": "/React-dnd-login/static/js/main.bcd71cfc.chunk.js",
+    "main.js.map": "/React-dnd-login/static/js/main.bcd71cfc.chunk.js.map",
+    "runtime-main.js": "/React-dnd-login/static/js/runtime-main.37501f13.js",
+    "runtime-main.js.map": "/React-dnd-login/static/js/runtime-main.37501f13.js.map",
+    "static/js/2.e96240d3.chunk.js": "/React-dnd-login/static/js/2.e96240d3.chunk.js",
+    "static/js/2.e96240d3.chunk.js.map": "/React-dnd-login/static/js/2.e96240d3.chunk.js.map",
+    "index.html": "/React-dnd-login/index.html",
+    "static/css/main.e5434f79.chunk.css.map": "/React-dnd-login/static/css/main.e5434f79.chunk.css.map",
+    "static/js/2.e96240d3.chunk.js.LICENSE.txt": "/React-dnd-login/static/js/2.e96240d3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37501f13.js",
+    "static/js/2.e96240d3.chunk.js",
+    "static/css/main.e5434f79.chunk.css",
+    "static/js/main.bcd71cfc.chunk.js"
+  ]
+}
